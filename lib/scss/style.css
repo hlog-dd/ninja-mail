@@ -198,7 +198,8 @@ button {
     -webkit-transform: scale(4) rotate(120deg);
     opacity: 0; } }
 .header {
-  padding-top: 20px; }
+  padding-top: 20px;
+  z-index: 9999; }
   .header .container {
     max-width: 1270px;
     width: 100%;
@@ -234,9 +235,9 @@ button {
             content: '';
             display: inline-block;
             top: 0%;
-            right: 0px;
-            width: 28px;
-            height: 100%;
+            right: 70px;
+            width: 20px;
+            height: 68%;
             background-color: #fff;
             animation: shiny-btn1 3s linear infinite; }
           .header .container .header-wrap .header-navbar .navbar-list .navbar-item:last-child > .active-sign-in:active {
@@ -281,6 +282,16 @@ button {
             color: #ffffff;
             font-weight: 700;
             font-style: normal; }
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 20px;
+  box-shadow: 0 0px 10px #0000001c; }
 
 .content {
   position: relative; }
@@ -427,7 +438,8 @@ button {
             transform: translateY(-8px); }
           .content div.introduce .container div.introduce-inner div.introduce-box img {
             -webkit-transition: 0.4s ease;
-            transition: 0.4s ease; }
+            transition: 0.4s ease;
+            width: 100%; }
           .content div.introduce .container div.introduce-inner div.introduce-box:nth-child(2) {
             padding-top: 82px; }
           .content div.introduce .container div.introduce-inner div.introduce-box div.introduce-text {
@@ -494,7 +506,8 @@ button {
             .content .user .container .user-list .user-item .user-inner .user-text {
               position: absolute;
               bottom: 0;
-              left: 27px; }
+              left: 27px;
+              text-shadow: 0 0 12px #000; }
               .content .user .container .user-list .user-item .user-inner .user-text h3 {
                 font-family: 'Raleway';
                 font-weight: 900;
@@ -666,7 +679,8 @@ button {
 .copyright {
   padding-top: 39px;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   .copyright span {
     font-family: 'Raleway';
     font-weight: 700;
