@@ -1,0 +1,181 @@
+@media (max-width: 1130px) {
+    .content {
+        div.create {
+            .container {
+                max-width: 888px;
+
+                div.create-inner {
+                    div.create-content {
+                        max-width: 406px;
+                        top: 26%;
+
+                        h1 {
+                            margin-bottom: 15px;
+                            font-size: 47px;
+                            line-height: 57px;
+                        }
+
+                        p {
+                            margin-bottom: 28px;
+                        }
+
+                        div.create-control {
+                            .btn {
+                                max-width: 167px;
+                                height: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-top: 16px;
+    }
+
+    .header .container .header-wrap .header-navbar .navbar-list .navbar-item .navbar-link {
+        margin: 0;
+        padding: 6px 14px 6px
+    }
+
+    .header .container .header-wrap .header-navbar .navbar-list .navbar-item .navbar-link span {
+        font-size: 14px;
+    }
+
+    .header .container .header-wrap .header-logo .header-logo__img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .header .container .header-wrap .header-logo span {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 830px) {
+    .content div.create .container div.create-inner {
+        padding: 70px 0 0 0;
+    }
+
+    .content div.create .container div.create-inner div.create-content {
+        top: 20%;
+    }
+
+    .content div.create .container div.create-inner div.create-content h1 {
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+
+    .content div.create .container div.create-inner div.create-content p {
+        margin-bottom: 24px;
+    }
+
+    .content div.create .container div.create-inner div.create-content div.create-control .btn {
+        font-size: 18px;
+        max-width: 144px;
+    }
+
+    .content div.create {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 786px) {
+    .content div.create .container div.create-inner div.create-content h1 {
+        font-size: 41px;
+        margin-bottom: 6px;
+    }
+
+    .content div.create .container div.create-inner div.create-content p {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .header .container .header-wrap .header-navbar .navbar-list .navbar-item .navbar-link {
+        margin: 0;
+        padding: 6px 10px 6px;
+    }
+
+    .header .container .header-wrap .header-logo span {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .container .header-wrap .header-logo .header-logo__img {
+        width: 42px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content div.create .container div.create-inner {
+        margin: 0 14px;
+    }
+
+    .header .container .header-wrap .header-logo span {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .header .container .header-wrap .header-navbar .navbar-list .navbar-item .navbar-link span {
+        font-size: 12px;
+    }
+
+    .content div.create .container div.create-inner div.create-content {
+        max-width: 334px;
+    }
+
+    .content div.create .container div.create-inner div.create-content h1 {
+        font-size: 38px;
+        margin-bottom: 6px;
+        line-height: 46px;
+    }
+
+    .content div.create .container div.create-inner div.create-content p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .content div.create .container div.create-inner div.create-content div.create-control .btn {
+        font-size: 14px;
+        max-width: 131px;
+        height: 42px;
+        line-height: 26px;
+        margin-right: 29px;
+    }
+
+    .header .container .header-wrap .header-navbar .navbar-list .navbar-item .navbar-link:hover span::after {
+        max-width: 110px;
+        width: 85%;
+        background-color: #4BA87D;
+        transition: all .4s linear;
+    }
+
+    .content div.create .container div.create-inner div.create-content {
+        top: 25%;
+    }
+
+    .content div.create .container div.create-inner div.create-image {
+        text-align: right;
+        height: 250px;
+    }
+    
+}
+
+@media (max-width: 668px) {
+    .content div.create .container div.create-inner div.create-image img {
+        width: 57.5%;
+        object-fit: cover;
+    }
+    
+    .header .container .header-wrap .header-navbar .navbar-list > .navbar-item:first-child {
+        display: none;
+    }
+}
