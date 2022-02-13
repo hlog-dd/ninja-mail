@@ -345,21 +345,18 @@ button {
               border-radius: 0;
               display: flex;
               align-items: center;
-              justify-content: center; }
+              justify-content: center;
+              position: relative; }
               .btn:nth-child(2) {
                 background-color: #ffffff;
                 border: 3px solid #4BA87D;
                 color: #4BA87D; }
                 .btn:nth-child(2):hover {
-                  background-color: #4BA87D;
+                  background: #4BA87D;
                   color: #ffffff; }
               .btn:nth-child(1) {
                 background-color: #4BA87D;
                 color: #ffffff; }
-                .btn:nth-child(1):hover {
-                  background: transparent;
-                  color: #4BA87D;
-                  border: 3px solid #4BA87D; }
         .content div.create .container div.create-inner div.create-image {
           text-align: right; }
           .content div.create .container div.create-inner div.create-image img {
@@ -416,7 +413,16 @@ button {
               line-height: 80px;
               color: #ffffff; }
             .content div.video .container div.video-wrap div.video-clip div.video-text .btn {
-              border: none; }
+              border: none;
+              cursor: pointer;
+              position: relative;
+              box-sizing: border-box;
+              overflow: hidden; }
+              .content div.video .container div.video-wrap div.video-clip div.video-text .btn:hover .eff-2 {
+                top: 0; }
+              .content div.video .container div.video-wrap div.video-clip div.video-text .btn:hover span {
+                color: #ffffff;
+                z-index: 10; }
   .content div.introduce {
     z-index: 1;
     margin-top: -84px;
@@ -573,7 +579,8 @@ button {
         .content div.register .container div.register-controls button {
           margin: 0 0 0 27px;
           background: #4BA87D;
-          color: #ffffff; }
+          color: #ffffff;
+          transition: all .3s linear; }
           .content div.register .container div.register-controls button:hover {
             background: transparent;
             color: #4BA87D;
@@ -588,8 +595,6 @@ button {
         font-weight: 500;
         font-family: 'Raleway';
         font-size: 21px; }
-  .content .register-text__mb {
-    display: none; }
   .content .brand {
     text-align: center; }
     .content .brand .container {
@@ -739,5 +744,56 @@ button {
 
 .swiper-css-mode > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: inherit; }
+
+.content div.register .container div.register-controls span.register-text__mb {
+  display: none; }
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px #ffffff00;
+  outline: 1px solid;
+  outline-color: #ffffff80;
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px #ffffff80, 0 0 20px #ffffff33;
+  outline-color: #ffffff00;
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; }
+
+.btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative; }
+
+.btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: 999; }
+
+.btn-4:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.eff-2 {
+  width: 100%;
+  height: 100%;
+  top: -65px;
+  left: 0;
+  background: #4BA87D;
+  position: absolute;
+  transition: all .5s ease;
+  z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

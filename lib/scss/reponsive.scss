@@ -748,6 +748,10 @@
     .content div.register .container div.register-controls {
         margin-bottom: 54px;
     }
+
+    .content div.register .container div.register-controls span.register-text__mb {
+        display: block;
+    }
 }
 
 @media (max-width: 430px) {
