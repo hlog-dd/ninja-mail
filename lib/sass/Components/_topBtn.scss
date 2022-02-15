@@ -1,0 +1,30 @@
+// Comeback
+.comeback {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1000;
+
+    a {
+        &:focus, &:focus-visible {
+            border: none;
+            outline: none;
+        }
+
+        border: 2px solid $white-color;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $white-color;
+        padding: 22px;
+
+        font: {
+            family: 'Raleway';
+            weight: $font-weight-heading;
+            size: $font-size-normal;
+        }
+
+        display: none;
+
+        height: 72px;
+    }
+}

@@ -1,0 +1,515 @@
+// Content SCSS
+.content {
+    position: relative;
+
+    $cre: 'create';
+    // Create begin
+    div.#{$cre} {
+        margin-bottom: 139px;
+
+        .container {
+            max-width: 1118px;
+            width: 100%;
+            margin: 0 auto;
+
+            div.#{$cre}-inner {
+                padding: 100px 0 0 0;
+                position: relative;
+
+                div.#{$cre}-content {
+                    z-index: 10;
+                    position: absolute;
+                    max-width: 550px;
+                    width: 100%;
+                    top: 25%;
+                    left: 0;
+
+                    h1 {
+                        font: {
+                            family: 'Playfair Display';
+                            weight: $font-weight-heading;
+                            size: $font-size-heading;
+                            style: normal;
+                        }
+
+                        line-height: 71px;
+                        color: $black-color;
+                        margin-bottom: 23px;
+                    }
+
+                    p {
+                        font: {
+                            family: 'Raleway';
+                            size: $font-size-medium;
+                            style: $font-weight-medium;
+                        }
+
+                        line-height: 26px;
+                        color: $black-color;
+                        margin-bottom: 35px;
+                    }
+
+                    div.#{$cre}-control {
+                        display: flex;
+                        align-items: center;
+
+                       
+                    }
+                }
+
+                div.#{$cre}-image {
+                    text-align: right;
+                    img {
+                        width: 62.5%;
+                        height: 100%;
+                        box-shadow: 0px 3px 15px #00000038;
+                    }
+                }
+            } 
+        }        
+    }
+
+    .create-text__mb {
+        display: none;
+    }
+    // End
+
+    // Video begin
+    $vid: 'video';
+    div.#{$vid} {
+        background: #f7f7f7;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 650px;
+            height: 100px;
+            position: absolute;
+            bottom: -27px;
+            background: #f7f7f7;
+            transform: skewY(170deg);
+        }
+
+        .container {
+            max-width: 974px;
+            width: 100%;
+            margin: 0 auto;
+
+            div.#{$vid}-wrap {
+                padding: 130px 0 0;
+                div.#{$vid}-clip {
+                    position: relative;
+                    z-index: 10;
+
+                    img {
+                        max-width: 944px;
+                        width: 100%;
+                        height: 531px;
+                        object-fit: cover;
+                    }
+
+                    div.#{$vid}-text {
+                        position: absolute;
+                        top: 30%;
+                        left: 0%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;
+                        z-index: 1;
+                        width: 100%;
+                        padding: 0 80px;
+
+
+                        h1 {
+                            font: {
+                                family: 'Playfair Display';
+                                weight: $font-weight-heading;
+                                size: $font-size-heading;
+                                style: normal;
+                            }
+    
+                            text-shadow: 0 0 10px $black-color;
+                            margin-bottom: 61px;
+                            line-height: 80px;
+                            color: $white-color;
+                        }
+    
+                        .btn {
+                            border: none;
+                            cursor: pointer;
+                            position: relative;
+                            box-sizing: border-box;
+                            overflow: hidden;
+
+                            &:hover .eff-2 {
+                                top: 0;
+                            }
+
+                            &:hover span {
+                                color: $white-color;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End
+
+    // Introduce begin
+    $intro: 'introduce';
+    div.#{$intro} {
+        z-index: 1;
+        margin-top: -84px;
+        background: #CAEAC7;
+        transform: skew(0deg, -10deg);
+
+        .container {
+            max-width: 1118px;
+            width: 100%;
+            margin: 0 auto;
+            
+            div.#{$intro}-inner {
+                transform: skew(0deg, 10deg);
+                padding: 200px 0 100px;
+                display: flex;
+
+                div.#{$intro}-box {
+                    filter: drop-shadow(0px 0px 7px rgba(0,0,0,0.18));
+                    cursor: pointer;
+                    overflow: hidden;
+                    max-width: 320px;
+                    width: 100%;
+                    margin-right: 47px;
+
+                    &:hover img {
+                        transform: scale(1.08);
+                    }
+
+                    &:hover div.#{$intro}-text {
+                        transform: translateY(-8px);
+                    }
+
+                    img {
+                        -webkit-transition: 0.4s ease;
+                        transition: 0.4s ease;
+                        width: 100%;
+                    }
+                     
+                    &:nth-child(2) {
+                        padding-top: 82px;
+                    }
+
+                   
+
+                    div.#{$intro}-text {
+                        background: $white-color;
+                        padding: 24px 39px 30px 20px;
+                        -webkit-transition: 0.4s ease;
+                        transition: 0.4s ease;
+
+                        a {
+                            color: $primary-color;
+                            font: {
+                                weight: 800;
+                                size: $font-size-normal;
+                                family: 'Raleway';
+                            }
+
+                            line-height: 19px;
+
+                        }
+                    }
+
+                }
+
+                div.#{$intro}-content {
+                    padding-top: 146px;
+
+                    h2 {
+                        font: {
+                            family: 'Playfair Display';
+                            weight: $font-weight-heading;
+                            style: normal;
+                            size: 44px;
+                        }
+
+                        line-height: 48px;
+                        color: $black-color;
+                        margin-bottom: 24px;
+                    }
+
+                    p {
+                        font: {
+                            family: 'Raleway';
+                            weight: $font-weight-normal;
+                            size: $font-size-medium;
+                            style: normal;
+                        }
+
+                        line-height: 26px;
+                        color: $black-color;
+                    }
+                }
+            }
+        }
+    }
+    // End
+
+    // User begin
+    .user {
+        padding-top: 36px;
+
+        .container {
+            max-width: 1118px;
+            width: 100%;
+            margin: 0 auto;
+
+            .user-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 -15px 40px;
+
+                .user-item {
+                    z-index: 2;
+                    padding: 0 15px;
+                
+                    .user-inner {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: middle;
+                        line-height: 0;
+                        overflow: hidden;
+                
+                        &:hover img {
+                            cursor: pointer;
+                            transform: scale(1.08);
+                            background-image: linear-gradient(to top, #000000, rgba(84, 84, 84, 0.0001))
+                        }
+                
+                        img {
+                            max-width: 342px;
+                            width: 100%;
+                            height: 239px;
+                            object-fit: cover;
+                            -webkit-transition: 0.4s ease;
+                            transition: 0.4s ease;
+                        }
+                
+                        .user-text {
+                            position: absolute;
+                            bottom: 0;
+                            left: 27px;
+                            text-shadow: 0 0 12px #000;
+
+                            h3 {
+                                font: {
+                                    family: 'Raleway';
+                                    weight: $font-weight-heading;
+                                    size: $font-size-title - 10px;
+                                    style: normal;
+                                }
+                
+                                margin-bottom: 4px;
+                                line-height: 40px;
+                                color: $white-color;
+                            }
+                
+                            span {
+                                font: {
+                                    size: $font-size-medium;
+                                    weight: $font-weight-medium - 100;
+                                    family: 'Raleway';
+                                    style: normal;
+                                }
+                
+                                display: block;
+                                margin-bottom: 16px;
+                                line-height: 22px;
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End
+
+    // Register begin
+    $regis: 'register';
+    div.#{$regis} {
+        text-align: center;
+        .container {
+            max-width: 934px;
+            width: 100%;
+            margin: 0 auto;
+
+            h1 {
+                font: {
+                    family: 'Playfair Display';
+                    weight: $font-weight-heading;
+                    size: $font-size-title;
+                }
+
+                margin-bottom: 40px;
+                color: $black-color;
+                line-height: 48px;
+            }
+
+            div.#{$regis}-controls {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                div.#{$regis}-input {
+                    max-width: 420px;
+                    width: 100%;
+                    height: 65px;
+                    padding: 0;
+
+                    input {
+                        border: 1px solid $border-color;
+                        padding: 19px 0 21px 25px;
+                        width: 100%;
+                        border-radius: 5px;
+    
+                        &:focus, &:focus-visible {
+                            border: none;
+                            outline: none;
+                        }
+
+                        &:focus, &:focus-visible &::placeholder {
+                            color: $primary-color;
+                        }
+
+                        &::placeholder {
+                            color: $black-color;
+                            letter-spacing: 1.05px;
+                            line-height: 25px;
+    
+                            font: {
+                                family: 'Raleway';
+                                size: 21px;
+                                weight: $font-weight-normal;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    margin: 0 0 0 27px;
+                    background: $primary-color;
+                    color: $white-color;
+                    transition: all .3s linear;
+
+                    &:hover {
+                        background: transparent;
+                        color: #4BA87D;
+                        border: 3px solid #4BA87D;
+                    }
+                }
+            }
+
+            span {
+                text-align: left;
+                display: block;
+                padding-left: 20%;
+                color: $primary-color;
+                letter-spacing: 1.05px;
+                margin-bottom: 75px;
+
+                font: {
+                    weight: $font-weight-normal;
+                    family: 'Raleway';
+                    size: 21px;
+                }
+            }
+        }
+    }
+    // End
+
+    // Brand begin
+    .brand {
+        text-align: center;
+
+        .container {
+            max-width: 974px;
+            width: 100%;
+            margin: 0 auto;
+
+            h1 {
+                font: {
+                    family: 'Playfair Display';
+                    weight: $font-weight-heading;
+                    size: $font-size-title;
+                }
+
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 45px;
+            }
+
+            ul.brand-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 146px;
+
+                li.brand-item {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    // End
+
+    // Plan begin
+    .plan {
+        background: $primary-color;
+        text-align: center;
+        padding: 82px 0 95px;
+        .container {
+            max-width: 974px;
+            width: 100%;
+            margin: 0 auto;
+
+            h1 {
+                font: {
+                    family: 'Playfair Display';
+                    size: $font-size-heading;
+                    style: normal;
+                    weight: $font-weight-heading;
+                }
+
+                margin-bottom: 30px;
+                line-height: 80px;
+                color: $white-color;
+            }
+
+            .btn {
+                border: none;
+                margin: 0 auto;
+                transition: all .3s linear;
+
+                &:hover {
+                    border: 3px solid $white-color;
+                }
+            }
+        }
+    }
+    // End
+}

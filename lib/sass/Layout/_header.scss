@@ -1,0 +1,152 @@
+// Header SCSS
+.header {
+    padding-top: 20px;
+    z-index: 9999;
+    .container {
+        max-width: 1270px;
+        width: 100%;
+        margin: 0 auto;
+
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header-logo {
+                &:hover {
+                    color: $black-color;
+                }
+
+                display: flex;
+                align-items: center;
+
+                .header-logo__img {
+                    width: 62px;
+                    height: 34px;
+                }
+
+                span {
+                    font: {
+                        style: $black-color;
+                        size: 35px;
+                        weight: $font-weight-heading;
+                    }
+                    line-height: 41px;
+                    vertical-align: top;
+                    margin-left: 20px;
+                    color: $black-color;
+                }
+            }
+
+            .header-navbar {
+                .navbar-list {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+
+                    .navbar-item:last-child > .active-sign-in {
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            display: inline-block;
+                            top: 0%;
+                            right: 70px;
+                            width: 20px;
+                            height: 68%;
+                            background-color: #fff;
+                            animation: shiny-btn1 3s linear infinite;
+                        }
+
+                        &:active {
+                            box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                                        -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+                        }
+                    }
+
+                    .navbar-item {
+                        &:last-child .navbar-link:hover {
+                            span {
+                                color: $white-color;
+                            }
+                        }
+
+                        &:last-child .navbar-link:hover span::after {
+                            display: none;
+                        }
+
+
+                        .navbar-link {
+                            display: block;
+                            margin-left: 11px;
+                            padding: 10px 20px 11px;
+                            position: relative;
+                            outline: none;
+                            border: none;
+                            
+
+                            span {
+                                font: {
+                                    weight: 800;
+                                    size: 17px;
+                                }
+                                color: $black-color;
+                                line-height: 20px;
+                                letter-spacing: 1.27px;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 9.8%;
+                                    bottom: 0;
+                                    height: 5px;
+                                    width: 0;
+                                    background-color: transparent;
+                                    -webkit-transition: width .3s ease-out,background-color .5s ease-out;
+                                    -moz-transition: width .3s ease-out,background-color .5s ease-out;
+                                    transition: width .3s ease-out,background-color .5s ease-out;
+                                }
+                            }
+
+                            &:hover span {
+                                color: $primary-color;
+                            }
+
+                            &:hover span::after {
+                                width: 110px;
+                                background-color: $primary-color;
+                                transition: all .4s linear;
+                            }
+                        }
+
+                        .active-sign-in {
+                            background: $primary-color;
+
+                            span {
+                                color: $white-color;
+                                font: {
+                                    weight: 700;
+                                    style: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: $white-color;
+    padding-bottom: 20px;
+    box-shadow: 0 0px 10px #0000001c;
+}
