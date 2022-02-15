@@ -457,7 +457,19 @@
     margin-top: -50px; }
 
   .content div.video .container div.video-wrap div.video-clip img {
-    height: 272px; } }
+    height: 272px; }
+
+  .comeback a {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 28px;
+    height: 60px; }
+
+  .header .container .header-wrap .header-navbar .navbar-list .navbar-item:last-child > .active-sign-in::before {
+    top: 5px;
+    right: 40px;
+    width: 16px;
+    height: 60%; } }
 @media (max-width: 588px) {
   .header .container .header-wrap .header-navbar .navbar-list > .navbar-item:nth-child(2) {
     display: none; }
